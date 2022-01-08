@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --direction-en: ltr;
+  --direction-ar: rtl;
+  --direction-zh-Hant: rtl;
+
+  --writing-mode-en: horizontal-tb;
+  --writing-mode-ar: horizontal-tb;
+  --writing-mode-zh-Hant: vertical-rl;
+
+  --direction: var(--direction-en);
+  --writing-mode: var(--writing-mode-en);
+
+  direction: var(--direction);
+  writing-mode: var(--writing-mode);
+}
+
+html {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+body {
+  padding-block-start: 40px;
+  block-size: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  max-inline-size: 400px;
+}
+
+article {
+  margin-block-start: 20px;
+  padding: 5px;
+  border-inline-start: 1px solid black;
+  border-block-end: 1px solid black;
+}
+
+h1 {
+  margin-block-end: 10px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  margin-inline-end: 10px;
+  float: left;
+}

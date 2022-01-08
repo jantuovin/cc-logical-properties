@@ -1,0 +1,3 @@
+[submodule "css-custom-properties-i18n"]
+	path = css-custom-properties-i18n
+	url = https://github.com/jantuovin/css-custom-properties-i18n
